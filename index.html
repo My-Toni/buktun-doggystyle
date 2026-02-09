@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUp Games - Diamond Free Fire & Mobile Legends</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-gamepad"></i>
+                    <h1>Toni TopUp</h1>
+                </div>
+                
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" id="hamburgerMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#features">Layanan</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#" id="caraTopupBtn">Cara Top Up</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="user-actions">
+                    <button class="btn btn-secondary"><i class="fas fa-user"></i> Masuk</button>
+                    <button class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Top Up Game Murah & Cepat</h2>
+                    <p>Beli Diamond Free Fire, Mobile Legends, dan game lainnya dengan harga termurah. Proses instan, aman, dan terpercaya. Dukung perjalanan gamingmu dengan mudah!</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="btn-beli-sekarang"><i class="fas fa-bolt"></i> Beli Sekarang</button>
+                        <button class="btn btn-secondary" id="caraTopupBtn2"><i class="fas fa-question-circle"></i> Cara Top Up</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://files.catbox.moe/7af6kt.png" alt="Toni TopUp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games" id="games">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pilih Game & Diamond</h2>
+            </div>
+            
+            <div class="game-tabs">
+                <button class="tab-btn active" data-game="freefire">
+                    <i class="fas fa-fire"></i> Free Fire
+                </button>
+                <button class="tab-btn" data-game="mlbb">
+                    <i class="fas fa-mobile-alt"></i> Mobile Legends
+                </button>
+                <button class="tab-btn" data-game="pubg">
+                    <i class="fas fa-crosshairs"></i> PUBG Mobile
+                </button>
+                <button class="tab-btn" data-game="valorant">
+                    <i class="fas fa-bullseye"></i> Valorant
+                </button>
+            </div>
+            
+            <!-- Free Fire Diamond Packages -->
+            <div class="game-content active" id="freefire-content">
+                <div class="diamond-grid">
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>70 Diamond</h3>
+                        <p>Untuk starter pack dan item dasar</p>
+                        <div class="price">Rp 10.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="70 Diamond" data-price="10000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card popular">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>140 Diamond</h3>
+                        <p>Paling banyak dibeli oleh gamers</p>
+                        <div class="price">Rp 20.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="140 Diamond" data-price="20000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>355 Diamond</h3>
+                        <p>Cocok untuk membeli skin biasa</p>
+                        <div class="price">Rp 50.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="355 Diamond" data-price="50000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>720 Diamond</h3>
+                        <p>Untuk skin langka dan bundle items</p>
+                        <div class="price">Rp 100.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="720 Diamond" data-price="100000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>1450 Diamond</h3>
+                        <p>Diamond jumlah besar untuk pro player</p>
+                        <div class="price">Rp 200.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="1450 Diamond" data-price="200000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>3650 Diamond</h3>
+                        <p>Paket maksimal untuk kolektor item</p>
+                        <div class="price">Rp 500.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Free Fire" data-amount="3650 Diamond" data-price="500000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Legends Diamond Packages -->
+            <div class="game-content" id="mlbb-content">
+                <div class="diamond-grid">
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>86 Diamond</h3>
+                        <p>Untuk weekly pass dan skin murah</p>
+                        <div class="price">Rp 25.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="86 Diamond" data-price="25000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card popular">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>172 Diamond</h3>
+                        <p>Cocok untuk membeli skin biasa</p>
+                        <div class="price">Rp 50.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="172 Diamond" data-price="50000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>344 Diamond</h3>
+                        <p>Untuk skin epic dan bundle items</p>
+                        <div class="price">Rp 100.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="344 Diamond" data-price="100000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>706 Diamond</h3>
+                        <p>Skin legend dan hero baru</p>
+                        <div class="price">Rp 200.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="706 Diamond" data-price="200000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>1412 Diamond</h3>
+                        <p>Untuk kolektor skin limited</p>
+                        <div class="price">Rp 400.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="1412 Diamond" data-price="400000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>2195 Diamond</h3>
+                        <p>Paket maksimal untuk pro player</p>
+                        <div class="price">Rp 600.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Mobile Legends" data-amount="2195 Diamond" data-price="600000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- PUBG Mobile Packages -->
+            <div class="game-content" id="pubg-content">
+                <div class="diamond-grid">
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>60 UC</h3>
+                        <p>Untuk starter pack dan item dasar</p>
+                        <div class="price">Rp 12.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="PUBG Mobile" data-amount="60 UC" data-price="12000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>325 UC</h3>
+                        <p>Cocok untuk membeli skin murah</p>
+                        <div class="price">Rp 65.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="PUBG Mobile" data-amount="325 UC" data-price="65000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card popular">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>660 UC</h3>
+                        <p>Paling banyak dibeli oleh gamers</p>
+                        <div class="price">Rp 130.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="PUBG Mobile" data-amount="660 UC" data-price="130000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Valorant Packages -->
+            <div class="game-content" id="valorant-content">
+                <div class="diamond-grid">
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>125 VP</h3>
+                        <p>Untuk starter pack dan item dasar</p>
+                        <div class="price">Rp 15.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Valorant" data-amount="125 VP" data-price="15000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card popular">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>650 VP</h3>
+                        <p>Cocok untuk membeli skin biasa</p>
+                        <div class="price">Rp 75.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Valorant" data-amount="650 VP" data-price="75000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                    
+                    <div class="diamond-card">
+                        <div class="diamond-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>1350 VP</h3>
+                        <p>Untuk skin premium dan bundle</p>
+                        <div class="price">Rp 150.000</div>
+                        <button class="btn btn-primary quick-buy-btn btn-buy" data-game="Valorant" data-amount="1350 VP" data-price="150000">
+                            <i class="fas fa-shopping-cart"></i> Beli Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mengapa Memilih Kami?</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Proses Instan</h3>
+                    <p>Diamond akan masuk ke akun game Anda dalam waktu kurang dari 5 menit setelah pembayaran berhasil.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Aman</h3>
+                    <p>Sistem pembayaran yang terenkripsi dan proses top up yang aman tanpa perlu membagikan password.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-percentage"></i>
+                    </div>
+                    <h3>Harga Terbaik</h3>
+                    <p>Kami menawarkan harga diamond yang kompetitif dengan promo dan bonus menarik setiap minggu.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Dukungan 24/7</h3>
+                    <p>Tim customer service kami siap membantu Anda kapan saja melalui WhatsApp, live chat, dan email.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Toni TopUp</h3>
+                    <p>Platform top up game terpercaya di Indonesia dengan layanan cepat dan harga terjangkau. Dukung pengalaman gaming terbaikmu bersama kami.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#games">Free Fire Diamond</a></li>
+                        <li><a href="#games">Mobile Legends Diamond</a></li>
+                        <li><a href="#games">PUBG Mobile UC</a></li>
+                        <li><a href="#games">Valorant Points</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Bantuan</h3>
+                    <ul>
+                        <li><a href="#" id="caraTopupBtnFooter">Cara Top Up</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@tonii.web.id</li>
+                        <li><i class="fab fa-whatsapp"></i> +62 881-0267-88157 (WhatsApp)</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Lamongan, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2030 TopUpGames. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20TopUpGames,%20saya%20ingin%20bertanya%20tentang%20pembelian%20diamond" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+        <i class="fas fa-check-circle"></i>
+        <span id="notification-text">Pesanan berhasil dikirim ke WhatsApp!</span>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeCheckoutModal">&times;</button>
+            
+            <div class="checkout-header">
+                <h2><i class="fas fa-shopping-cart"></i> Checkout</h2>
+                <p>Lengkapi data berikut untuk melanjutkan pembelian</p>
+            </div>
+            
+            <div class="checkout-details">
+                <h3>Detail Pesanan</h3>
+                <div class="detail-row">
+                    <span class="detail-label">Game:</span>
+                    <span class="detail-value" id="checkout-game">Free Fire</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Paket:</span>
+                    <span class="detail-value" id="checkout-amount">70 Diamond</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Harga:</span>
+                    <span class="detail-price" id="checkout-price">Rp 10.000</span>
+                </div>
+            </div>
+            
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="user-id"><i class="fas fa-user"></i> User ID / Nickname</label>
+                    <input type="text" id="user-id" placeholder="Masukkan User ID atau Nickname game Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="server"><i class="fas fa-server"></i> Server</label>
+                    <select id="server" required>
+                        <option value="">Pilih Server Game</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="other">Lainnya</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="payment"><i class="fas fa-credit-card"></i> Metode Pembayaran</label>
+                    <select id="payment" required>
+                        <option value="">Pilih Metode Pembayaran</option>
+                        <option value="dana">DANA</option>
+                        <option value="gopay">GoPay</option>
+                        <option value="ovo">OVO</option>
+                        <option value="shopeepay">ShopeePay</option>
+                        <option value="bank_transfer">Transfer Bank</option>
+                        <option value="qris">QRIS</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email (Opsional)</label>
+                    <input type="email" id="email" placeholder="Masukkan email untuk notifikasi">
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes"><i class="fas fa-sticky-note"></i> Catatan (Opsional)</label>
+                    <input type="text" id="notes" placeholder="Catatan tambahan untuk admin">
+                </div>
+                
+                <div class="modal-buttons">
+                    <button type="submit" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+                    </button>
+                    <button type="button" class="btn btn-secondary" id="cancelCheckout">
+                        Batal
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Cara Top Up -->
+    <div class="modal" id="topupGuideModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeTopupGuide">&times;</button>
+            <h2><i class="fas fa-graduation-cap"></i> Cara Top Up Diamond</h2>
+            
+            <div class="topup-guide">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Pilih Game dan Paket Diamond</h3>
+                        <p>Pilih game yang ingin Anda top up (Free Fire, Mobile Legends, dll) kemudian pilih paket diamond yang sesuai dengan kebutuhan Anda. Klik tombol "Beli Sekarang" pada paket yang dipilih.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Lengkapi Data Checkout</h3>
+                        <p>Isi form checkout dengan data akun game Anda (User ID/Nickname, Server) dan pilih metode pembayaran yang diinginkan.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Kirim ke WhatsApp</h3>
+                        <p>Klik tombol "Checkout via WhatsApp" untuk mengirim pesanan Anda ke admin kami via WhatsApp. Pastikan data yang tertera sudah benar.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Lakukan Pembayaran</h3>
+                        <p>Admin akan mengirimkan nomor rekening atau metode pembayaran yang tersedia. Lakukan pembayaran sesuai nominal yang tertera dan kirim bukti transfer ke admin.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Konfirmasi dan Proses Top Up</h3>
+                        <p>Setelah pembayaran dikonfirmasi, admin akan memproses top up diamond ke akun game Anda. Proses biasanya memakan waktu 1-5 menit setelah konfirmasi pembayaran.</p>
+                    </div>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Diamond Masuk ke Akun</h3>
+                        <p>Cek akun game Anda untuk memastikan diamond sudah masuk. Jika dalam 10 menit diamond belum masuk, segera hubungi admin via WhatsApp untuk konfirmasi.</p>
+                    </div>
+                </div>
+                
+                <div class="important-note">
+                    <h4><i class="fas fa-exclamation-circle"></i> Penting Diperhatikan:</h4>
+                    <ul>
+                        <li>Pastikan User ID dan Server yang Anda berikan sudah benar</li>
+                        <li>Simpan bukti pembayaran sampai diamond masuk ke akun</li>
+                        <li>Jangan berikan password akun game kepada siapapun</li>
+                        <li>Proses top up hanya bisa dibatalkan sebelum pembayaran dilakukan</li>
+                        <li>Untuk masalah teknis, hubungi WhatsApp kami di jam operasional 08:00 - 22:00 WIB</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <button class="btn btn-primary" id="startTopupFromGuide">
+                    <i class="fas fa-shopping-cart"></i> Mulai Top Up Sekarang
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
